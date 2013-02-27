@@ -6,4 +6,3 @@
 	- global.css: hoja de estilo
 	- index.html: HTML que aloja la aplicación
 	- ini.js: fichero que contiene la funcionalidad principal en JavaScript.
-
