@@ -1,14 +1,14 @@
 "use strict"; // Use ECMAScript 5 strict mode in browsers that support it
 
-$(document)._____(function() {
-   $("#fileinput").______(calculate);
+$(document).ready (function() {
+   $("#fileinput").change(calculate);
 });
 
 function calculate(evt) {
   var f = evt.target.files[0]; 
 
   if (f) {
-    var r = new __________();
+    var r = new FileReader ();
     r.onload = function(e) { 
       var contents = e.target.______;
       
@@ -19,7 +19,7 @@ function calculate(evt) {
       initialinput._________ = contents;
       finaloutput._________ = pretty;
     }
-    r.__________(f); // Leer como texto
+    r.readAsText(f); // Leer como texto
   } else { 
     alert("Failed to load file");
   }
